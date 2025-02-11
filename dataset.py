@@ -11,6 +11,8 @@ def generate_dataset():
     ])
 
     dataset = datasets.ImageFolder('dataset', transform=transform)
+    # print(dataset.classes)
+    # print(dataset.class_to_idx)
 
     train_size = round(.8 * len(dataset))
     test_size = round(.15 * len(dataset))
